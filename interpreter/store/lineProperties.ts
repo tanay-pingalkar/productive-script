@@ -6,3 +6,9 @@ export interface lineProperties{
     lineNumber:number,
     lineType:name
 }
+
+export interface functionalLine{
+    words:Array<string>,
+    lineNumber:number,
+    lineType:"functional"
+}

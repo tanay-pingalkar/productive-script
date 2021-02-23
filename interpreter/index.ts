@@ -8,14 +8,11 @@ import { exit } from "process";
 const rl = readline.createInterface(process.stdin, process.stdout);
 
 const main=async():Promise<void>=>{
-    let str=new Split(await (await readFile(__dirname+`/../${fileName}.ps`,)).toLocaleString());
+    let str=new Split(await (await readFile(__dirname+`/../${fileName}.pds`,)).toLocaleString());
     let splited=str.split();
     let tokens=new tokenizer(splited);
-    let lines=tokens.tokenize();
-    let declare=new Declare(lines);
-    console.log(declare.let)
+    tokens.tokenize();
     exit()
-
 }
 let fileName;
     rl.question('file name :- ', (name) => {

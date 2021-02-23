@@ -1,4 +1,4 @@
-import { genericTypes, name, resolvers} from "./types";
+import { name } from "./types";
 
 interface identifier{
     name:name,
@@ -13,6 +13,7 @@ export interface identifiersInterface{
 }
 
 export interface intInterface{
-    name:String
-    val:number
+    name:String,
+    val:number | boolean,
+    path:string
 }
