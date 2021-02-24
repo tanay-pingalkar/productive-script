@@ -1,17 +1,88 @@
 # productive-script
-not realeased yet, so you have to clone the repo and then 
-`npm i`
+## installation
+not realeased yet, 
+so you have to clone the repo 
+typescript needed to be install globally
+```
+npm i typescript -g
+```
+```
+gh repo clone tanay-pingalkar/productive-script
+```
+and then 
+```
+npm i
+```
 then 
-`npm run watch`
+```
+npm run watch`
+```
 then 
-`npm start / npm run dev`
-it will ask for file name
-type `vari`
-and you go
-till now you can declare variable and can do calculation
+```
+npm start / npm run dev
+```
+it will ask for
+```
+file name :- 
+```
+type `hello`
+and enter
+you will see
+```javascript
+reading..
+file is ready!
+OUTPUT:
+hello world
+```
+it means that you have productive-script working on your machine
 
-simple hello world
+## learn
+### simple hello world
+create a file in the in repo's dir with the extention .pds
+and type following
 ```javascript
 *pt("hello world")
 ```
+you will see hello world printed below the output
+like this
+```javascript
+reading..
+file is ready!
+OUTPUT:
+hello world
+```
+`*pt()`is a language function to print variables or any kind of data.
+### declare variable
+```javascript
+#int num="number"
+```
+will throw error like this, because you cannot assign a string to a number
+```
+cant assign "number" to number
+the error has occure on line 1
+```
+Corection
+```javascript
+#int num=55
+*pt(num)
+```
+this will print number 55. You can similarly declare string but with different prefix.
+```javascript
+#str helloString="hello world"
+*pt(helloString)
+```
+## identifiers
+as you can see to declare variables we are using different prefix but did you notice that there is something common in `#int` and `#str`. You guess it! the `#`
+ is common. `#` is an identifier. there is another  identifier called `$` to declare a constant variable. And `*` identifies that this is an language function.
+
+## expression
+```javascript
+#int expre=1+2/3*6
+*pt(expre)
+```
+guess the output..
+## climax
+I know the language is so primitive and dont have that much functions as other language. I am coding this language from few days. Its open source so you can also contribute to this project. The main motive behind this language is productivity, readibility and reusibility. The langusge will be launched soon when it will become enough mature to compete with other language.
+
+
 
