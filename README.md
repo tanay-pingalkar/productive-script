@@ -15,9 +15,9 @@ npm i
 ```
 then 
 ```
-npm run watch`
+npm run watch
 ```
-then 
+in another terminal
 ```
 npm start / npm run dev
 ```
