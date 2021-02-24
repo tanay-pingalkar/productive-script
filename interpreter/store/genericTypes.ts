@@ -1,30 +1,9 @@
-import { intInterface } from "./interfaces"
-import * as chalk from 'chalk';
-import { expression } from "../processes/resolvers/expression";
+import { cInt } from "./types/const/int";
+import { lInt } from "./types/let/int";
+import { lStr } from "./types/let/str";
 
 export const genericList={
-    "#int":{
-        type:"int",
-        conv:(sentence:Array<string>, lineNumber:number):boolean | intInterface=>{
-            const ar=sentence[1].split("=")
-            return{
-                name:ar[0],
-                val:expression(ar[1],lineNumber),
-                path:"#int"
-            };
-        }
-    }
-}
-export const constList={
-    "$int":{
-        type:"int",
-        conv:(sentence:Array<string>, lineNumber:number):boolean | intInterface=>{
-            const ar=sentence[1].split("=")
-            return{
-                name:ar[0],
-                val:expression(ar[1],lineNumber),
-                path:"#int"
-            };
-        }
-    }
+    "#int":lInt,
+    "$int":cInt,
+    "#str":lStr
 }

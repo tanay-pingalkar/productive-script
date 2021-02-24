@@ -15,5 +15,5 @@ export interface identifiersInterface{
 export interface intInterface{
     name:String,
     val:number | boolean,
-    path:string
+    path:string,
 }

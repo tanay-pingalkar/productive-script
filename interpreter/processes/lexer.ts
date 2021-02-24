@@ -27,11 +27,11 @@ export class tokenizer{
                     words:words,
                     lineNumber:i,
                     lineType:lineType
-                })
+                },this.declare.variables)
             }
             
         });
-        console.log(this.declare)
+        //console.log(this.declare)
     }
     lineType(words:Array<string>):name{
         if(words[0].startsWith(identifier['#'].symbol)){

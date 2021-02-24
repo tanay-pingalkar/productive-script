@@ -1,10 +1,9 @@
-import { constList, genericList } from "../../store/genericTypes";
+import { genericList } from "../../store/genericTypes";
 import { lineProperties } from "../../store/lineProperties";
 
 
 export class Declare{
-    let:object={};
-    consts:object={};
+    variables:object={};
     constructor(){
         return this
     }
@@ -12,15 +11,11 @@ export class Declare{
         this.declareVariable(line);
     }
     declareVariable(line:lineProperties){
-        if(line.lineType==="let"){
-            const prefix=line.words[0]
-            const data=genericList[prefix].conv(line.words, line.lineNumber);
-            this.let[data.name]=data.val;
-        }
-        else{
-            const prefix=line.words[0]
-            const data=constList[prefix].conv(line.words, line.lineNumber);
-            this.consts[data.name]=data.val;
+        const prefix=line.words[0]
+        const data=genericList[prefix].conv(line.words, line.lineNumber);
+        this.variables[data.name]={
+            val:data.val,
+            path:data.path,
         }
     }
 }
