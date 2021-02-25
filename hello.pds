@@ -1,2 +1,2 @@
-#str a="hello world"
+$str a="hello world"
 *pt(a)

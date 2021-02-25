@@ -1,7 +1,7 @@
 import { typeCheck } from "../../typeCheck/typeCheck";
 import { throwEr } from "../../utils/throw";
 
-export const lStr = {
+export const cStr = {
   type: "str",
   conv: (sentence: Array<string>, lineNumber: number) => {
     sentence.splice(0, 1);
@@ -10,11 +10,11 @@ export const lStr = {
       return {
         name: ar[0],
         val: ar[1].split(`"`)[1],
-        path: "#str",
+        path: "$str",
       };
     } else {
       throwEr(`cant assign ${ar[1]} to string`, lineNumber);
     }
   },
-  role: "let",
+  role: "const",
 };
