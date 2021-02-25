@@ -1,2 +1,2 @@
-$str a="hello world"
-*pt(a)
+#int a="lol"
+*pt(1 + 2 +3)
