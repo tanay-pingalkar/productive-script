@@ -1,4 +1,5 @@
 # productive-script
+[abandoned/deprecated]
 ## installation
 not realeased yet, 
 so you have to clone the repo 
@@ -81,8 +82,7 @@ as you can see to declare variables we are using different prefix but did you no
 *pt(expre)
 ```
 guess the output..
-## climax
-I know the language is so primitive and dont have that much functions as other language. I am coding this language from few days. Its open source so you can also contribute to this project. The main motive behind this language is productivity, readibility and reusibility. The langusge will be launched soon when it will become enough mature to compete with other language.
+
 
 
 
