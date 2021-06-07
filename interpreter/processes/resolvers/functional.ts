@@ -16,6 +16,6 @@ export class Mind {
   }
   breakdown(words: Array<string>, lineNumber: number) {
     const word = words.join(" ").split(/[()]/g);
-    functions[word[0]].do(word[1], this.variables, lineNumber + 1);
+    return functions[word[0]].do(word[1], this.variables, lineNumber + 1);
   }
 }
